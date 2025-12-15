@@ -6,10 +6,12 @@ This repository demonstrates the **Abstract Factory Pattern** implemented in **.
 
 The Abstract Factory Pattern is a **creational design pattern** that provides an interface for creating **families of related or dependent objects** without specifying their concrete classes.
 
-▶️ How to Run
+### ▶️ How to Run
 
-The pattern usage is executed from Program.cs:
-using creational.abstract_factory.ui_component_demo;
+```csharp
+using CreationalPatterns.AbstractFactoryPattern;
 
-new AbstractFactoryUIComponentDemo().Run();
+new AbstractFactoryDemo().Run();
+
+
 
