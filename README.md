@@ -11,7 +11,7 @@ The Abstract Factory Pattern is a **creational design pattern** that provides an
 ```csharp
 using CreationalPatterns.AbstractFactoryPattern;
 
-new AbstractFactoryDemo().Run();
+new AbstractFactoryUIComponentDemo().Run();
 
 
 
