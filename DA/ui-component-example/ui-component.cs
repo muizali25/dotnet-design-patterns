@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace creational.abstract_factory.ui_component
 {
+    public enum OS
+    {
+        Windows,
+        Mac,
+    }
     interface IButton
     {
         void Render();
@@ -52,18 +57,11 @@ namespace creational.abstract_factory.ui_component
             Console.WriteLine("Rendering Mac CheckBox");
         }
     }
-
     class WindowsFactory : IGUIFactory
     {
         public IButton CreateButton() => new WindowsButton();
         public ICheckBox CreateCheckBox() => new WindowsCheckBox();
-    }
-
-    public enum OS
-    {
-        Windows,
-        Mac,        
-    }
+    }   
     class MacFactory : IGUIFactory
     {
         public IButton CreateButton() => new MacButton();
